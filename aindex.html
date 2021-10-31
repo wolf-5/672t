@@ -147,6 +147,11 @@ tempC.value=60;
 <br>
 </div>
 <script>
+function load_Jailbreak(){
+msgs.innerHTML="Jailbreak Please Wait ....";
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("kernel.js",function(){setTimeout(jailbreak,2500);});}loadScript();
+}
 function load_HEN213b(){
 msgs.innerHTML="<h1 style='font-size:30px;text-align:center;'>Loading HEN 2.1.3b ( vr spoof 7.50 ) ...</h1>";
 LoadedMSG="HEN 2.1.3b ( vr spoof 7.50 ) Loaded ✔ - Press Circle To Exit";
